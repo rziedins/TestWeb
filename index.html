@@ -10,29 +10,41 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
    <link rel="stylesheet" href="css/stils.css">
+   
+
+  
 </head>
 <body>
 
+ 
+<div id="navbar">
+  <a class="active" href="javascript:void(0)">&ltDIV&gt</a>
+  <a href="javascript:void(0)">&ltSPAN&gt</a>
+  <a href="javascript:void(0)">&ltCODE&gt</a>
+</div>
+
+    
+    
+    
+    
+    
+
 <!-- Navbar -->
-<nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">WEB DESIGN</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"> &ltDIV&gt </a></li>
-        <li><a href="#"> &ltSPAN&gt </a></li>
-        <li><a href="#"> &ltCODE&gt </a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+ <script>
+ 
+window.onscroll = function() {myFunction();};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+ </script>
 
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
@@ -79,15 +91,15 @@
   <div class="row">
     <div class="col-sm-4">
       <p>A lot of intros in CSS start with classes and how to name them, while many teach to give them practical names, what no one will tell you is that you can use various unicode symbols in name giving. </p>
-      <img src="Capture3.JPG" class="img-responsive margin" style="width:100%" alt="Image">
+      <img src="capture3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
     <div class="col-sm-4"> 
       <p>Many don't know this, but you can create image filters through pure CSS!</p>
-      <img src="Capture.JPG" class="img-responsive margin" style="width:100%" alt="Image">
+      <img src="capture.jpg" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
     <div class="col-sm-4"> 
       <p>By messing around with "border-radius" in your style-sheet you can create flawless circles!</p>
-      <img src="Capture4.JPG" class="img-responsive margin" style="width:100%" alt="Image">
+      <img src="capture4.jpg" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
   </div>
 </div>
@@ -100,4 +112,3 @@
 
 </body>
 </html>
-
